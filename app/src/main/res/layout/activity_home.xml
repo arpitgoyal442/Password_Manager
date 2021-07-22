@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+
+            android:fontFamily="@font/coda"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.1"
+            android:padding="5dp"
+            android:text="Welcome, Back"
+            android:textColor="#09F8F8"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/coda"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.05"
+            android:padding="5dp"
+            android:text="Enter Master Key"
+            android:textColor="#09F8F8"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/edt_text_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280dp"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="clip_horizontal"
+            android:inputType="numberPassword"
+            android:paddingLeft="5dp"
+            android:textColor="@color/teal_200"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btn_done"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="36dp"-->
+<!--            android:text="Done"-->
+<!--            android:textColor="#2AE432"-->
+<!--            android:textSize="20sp"-->
+<!--            app:backgroundTint="#C3000000"-->
+<!--            app:cornerRadius="10dp" />-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/auth2_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_baseline_check_circle_outline_24"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:backgroundTint="#09F8F8"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/coda"
+            android:text="Forget Master Key ? Create new Database"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

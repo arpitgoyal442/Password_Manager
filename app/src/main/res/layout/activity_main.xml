@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/coda"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.1"
+            android:padding="5dp"
+            android:text="Password Manager"
+            android:textColor="#18F621"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/coda"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.05"
+            android:padding="5dp"
+            android:text="Set Master Key"
+            android:textColor="#18F621"
+            android:textSize="27sp" />
+
+
+        <EditText
+            android:id="@+id/edt_text_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:focusable="true"
+            android:gravity="clip_horizontal"
+            android:inputType="numberPassword"
+            android:textColor="#18F621"
+            android:textSize="24sp"
+            android:visibility="visible" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_setKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="70dp"
+            android:text="Set Key"
+            android:textColor="#2AE432"
+            android:textSize="20sp"
+            app:backgroundTint="#C3000000"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/coda"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.05"
+            android:paddingLeft="4dp"
+            android:paddingRight="0dp"
+            android:text="Note: Remember this Master Password ,If you forget it you will loose all your data!"
+            android:textColor="#18F621"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
