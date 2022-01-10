@@ -21,7 +21,7 @@ public class myHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("CREATE TABLE AllPasswords (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + "Title TEXT, "
+                + "Title TEXT UNIQUE, "
                 + "Password TEXT);");
     }
 
